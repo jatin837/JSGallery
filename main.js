@@ -19,22 +19,22 @@ function newImage(){
 /* Wiring up the Darken/Lighten button */
 function changeBrightness() {
   
-    classB = btn.getAttribute('class');
   
-    if(classB == 'dark'){
+    if(btn.class === 'dark'){
         
-        btn.setAttribute('class','light')
+        btn.class='light';
      
-        btn.setAttribute('textContent', 'lighten')
+        btn.textContent = 'lighten';
         
-        overlay.setAttribute('style', 'background-color:(0,0,0,0.5)')
+        overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
         
     }
     else {
-   
-        btn.setAttribute('class','dark')
-        btn.setAttribute('textContent', 'darken')
-        overlay.setAttribute('style', 'background-color:(0,0,0,0.5)')
+        btn.class='dark';
+     
+        btn.textContent = 'darken';
+        
+        overlay.style.backgroundColor = 'rgba(0,0,0,0)';
     }
 }
 
